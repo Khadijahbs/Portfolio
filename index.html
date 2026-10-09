@@ -1,77 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khadija Bello Shehu- Portfolio</title>
+
+    <meta name="description"
+          content="Khadija Bello Shehu's portfolio showcasing software development projects, technical skills, data analytics interests, and artificial intelligence.">
+
+    <meta name="theme-color" content="#fff7f8">
+
+    <title>Khadija Bello Shehu | Software Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
-<!-- Font Awesome CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>Khadija Bello Shehu</h1>
-            <ul>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="brand">
+                <span class="brand-mark">K</span>
+                <span>Khadija <span class="brand-accent">BS.</span></span>
+            </a>
+
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle">Toggle Theme</button></li>
             </ul>
+
+            <button id="theme-toggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Switch to dark theme"
+                    title="Toggle light and dark theme">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+            </button>
         </nav>
     </header>
 
-<section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>I am a Software Engineer driven by a passion for creating impactful,real-world solution.</p>
-</section>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>My name is Khadija Bello Shehu,I`m a third year software engineering student passionate about learning,building,and exploring the tech world one line of code at a time,while discovering where discovering where i can make the greatest impact.</p>
-   </section>
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero section-container">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="status-dot"></span>
+                    SOFTWARE ENGINEERING STUDENT
+                </span>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <!--<div class="projects">
-        <h3>wallet app</h3>
-        <p>A Wallet app in Python for tracking income,expenses and balances</p>
-    </div>-->
-  
-    <div class="project">
-        <h3>Python Attendance System</h3>
-        <p>An automated system to manage attendance using Python.</p>
-        <a href="https://github.com/khadijahbs/attendance"target="_blank">View Attendance Tracker.</a>
-    </div>
-    <div class="project">
-        <h3>Sales Record System</h3>
-        <p>A Python base sales track,store,and summarize daily transaction.</p>
-        <a href="https://github.com/khadijahbs/sales-record"target="_blank">View Sales Record.</a>
-    </div>
-</section>
-    <section id="contact" data-aos="fade-left">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:khadijabello205@gmail.com">Khadijabello205@gmail.com</a></p>
-    <p>Phone: +234 9066966899</p>
+                <h1>
+                    Hello, I'm <span class="gradient-text">Khadija Bello Shehu.</span>
+                </h1>
 
-    <div class="social-icons">
-    <a href="https://wa.me/2349066966899" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    <a href="https://github.com/khadijahbs" target="_blank"><i class="fa-brands fa-github"></i></a>
-</div>
-<div style="margin-top: 2rem;">
-            <iframe src="https://maps.apple.com/?address=Kano,%20Kano,%20Nigeria&auid=4366141479632640704&ll=11.962520,8.524957&lsp=7618&q=My%20Location&t=m" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-</section>
+                <p class="hero-description">
+                    I enjoy turning ideas into practical technology solutions.
+                    I'm building my skills in software development, exploring
+                    data analytics, and discovering how artificial intelligence
+                    can solve real-world problems.
+                </p>
 
-    <footer>
-        <p>&copy; 2025 Khadija Bello Shehu. All rights reserved.</p>
+                <div class="hero-tags">
+                    <span><i class="fa-solid fa-code"></i> Software Development</span>
+                    <span><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+                    <span><i class="fa-solid fa-brain"></i> AI & Machine Learning</span>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Projects
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/khadijahbs"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="mailto:khadijabello205@gmail.com"
+                       aria-label="Send me an email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual" aria-label="Introduction highlight">
+                <div class="decor decor-one"></div>
+                <div class="decor decor-two"></div>
+
+                <div class="profile-card">
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <span class="profile-small-label">LEARN. BUILD. GROW.</span>
+                    <h2>Curious mind.<br>Purposeful code.</h2>
+
+                    <p>
+                        Learning by building projects and exploring
+                        meaningful uses of technology.
+                    </p>
+
+                    <div class="profile-divider"></div>
+
+                    <div class="profile-footer">
+                        <span><i class="fa-solid fa-location-dot"></i> Kano, Nigeria</span>
+                        <span class="availability">
+                            <span class="status-dot"></span> Open to learning
+                        </span>
+                    </div>
+                </div>
+
+                <div class="floating-note">
+                    <i class="fa-solid fa-heart"></i>
+                    Building with purpose
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section-container section-block">
+            <div class="section-heading">
+                <span class="eyebrow">A LITTLE ABOUT ME</span>
+                <h2>Getting to know <span class="gradient-text">me.</span></h2>
+                <p>My journey into technology, one step at a time.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <div class="about-content">
+                    <h3>Learning, building, and making an impact.</h3>
+
+                    <p>
+                        My name is Khadija Bello Shehu, and I am a final-year
+                        Software Engineering student at Northwest University,
+                        Kano State. I am passionate about learning, building,
+                        and exploring the technology world one line of code
+                        at a time.
+                    </p>
+
+                    <p>
+                        Through academic and personal projects, I am developing
+                        my software development skills while exploring data
+                        analytics, artificial intelligence, and machine learning.
+                        I am particularly interested in how technology and
+                        data can help people understand problems and make
+                        better decisions.
+                    </p>
+
+                    <p>
+                        I believe in continuous learning, practical experience,
+                        and building solutions that serve a real purpose.
+                        My goal is to keep growing as a technologist and
+                        contribute to meaningful projects.
+                    </p>
+
+                    <div class="education-note">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <strong>Northwest University, Kano</strong>
+                            <span>B.Sc. Software Engineering · Expected graduation: 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section-container section-block">
+            <div class="section-heading">
+                <span class="eyebrow">WHAT I'M LEARNING</span>
+                <h2>My technical <span class="gradient-text">toolkit.</span></h2>
+                <p>Tools and technologies I have worked with through learning and projects.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon pink">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>Python and JavaScript</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon purple">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>HTML, CSS, Flask</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon peach">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <p>SQL and SQLite</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon rose">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3>Developer Tools</h3>
+                    <p>Git, GitHub, VS Code</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon lavender">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3>Data & Analytics</h3>
+                    <p>Pandas and data analysis fundamentals</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon pink">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Introductory machine learning with scikit-learn</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section-container section-block">
+            <div class="section-heading">
+                <span class="eyebrow">SELECTED WORK</span>
+                <h2>Things I've <span class="gradient-text">built.</span></h2>
+                <p>A selection of academic and personal software projects.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- TASKFLOW PROJECT -->
+                <article class="project-card featured-project">
+                    <div class="project-top">
+                        <div class="project-icon pink">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <span class="project-label">FEATURED PROJECT</span>
+                    </div>
+
+                    <h3>Intelligent Task Management System — TaskFlow</h3>
+
+                    <p>
+                        A task management web application designed to help users
+                        organize tasks, monitor productivity, and identify
+                        potential deadline risks. Features include task tracking,
+                        reminders, productivity analysis, and machine-learning-based
+                        predictions.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                    </div>
+
+                    <div class="project-links">
+                        <!--
+                        IMPORTANT:
+                        Replace PASTE_YOUR_TASKFLOW_LIVE_LINK_HERE below
+                        with your real deployed TaskFlow URL.
+                        Example: https://your-taskflow-app.example.com
+                        -->
+                        <a href="https://intelligent-task-management-system-wine.vercel.app/"
+                           class="project-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <span class="link-reminder">
+                            Add your deployed app link above
+                        </span>
+                    </div>
+                </article>
+
+                <!-- ATTENDANCE PROJECT -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon purple">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <span class="project-label">PYTHON</span>
+                    </div>
+
+                    <h3>Python Attendance System</h3>
+
+                    <p>
+                        An attendance management system developed using Python
+                        to help record, organize, and manage attendance
+                        information efficiently.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Automation</span>
+                    </div>
+
+                    <a href="https://github.com/khadijahbs/attendance"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <!-- SALES PROJECT -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon peach">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <span class="project-label">PYTHON</span>
+                    </div>
+
+                    <h3>Sales Record System</h3>
+
+                    <p>
+                        A Python-based sales tracking application designed
+                        to record transactions, organize sales information,
+                        and summarize daily sales activity.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Data Management</span>
+                    </div>
+
+                    <a href="https://github.com/khadijahbs/sales-record"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section-container section-block">
+            <div class="contact-card">
+                <span class="eyebrow">LET'S CONNECT</span>
+                <h2>Have an opportunity or idea?</h2>
+
+                <p>
+                    I'm interested in learning opportunities, technical training,
+                    internships, and collaborations that help me grow and
+                    contribute to meaningful technology solutions.
+                </p>
+
+                <a class="btn btn-primary"
+                   href="mailto:khadijabello205@gmail.com">
+                    Send Me an Email
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+
+                <div class="contact-details">
+                    <a href="mailto:khadijabello205@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        khadijabello205@gmail.com
+                    </a>
+
+                    <a href="https://wa.me/2349066966899"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +234 906 696 6899
+                    </a>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://github.com/khadijahbs"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="mailto:khadijabello205@gmail.com"
+                       aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://wa.me/2349066966899"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="#home" class="footer-brand">Khadija <span>BS.</span></a>
+        <p>Learning, building, and discovering impact.</p>
+        <p>&copy; 2026 Khadija Bello Shehu. All rights reserved.</p>
     </footer>
-<a href="https://wa.me/2349066966899" target="_blank" class="whatsapp-float">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+
+    <a href="https://wa.me/2349066966899"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="whatsapp-float"
+       aria-label="Chat with me on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
     <script src="script.js"></script>
 </body>
-
 </html>
